@@ -7,14 +7,14 @@ import Admin from "./Admin";
 const DashboardContext = createContext();
 
 const DashboardLayout = () => {
-  // temp
+ 
   const user = { name: "tobby" };
 
-  const [showSidebar, setShowSidebar] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [showSidebar, setShowSidebar] = useState();
+  const [isDarkTheme, setIsDarkTheme] = useState();
 
   const toggleDarkTheme = () => {
-    console.log("console dark theme");
+    console.log("yes am not working t the moment")
   };
 
   const toggleSidebar = () => {
@@ -22,7 +22,7 @@ const DashboardLayout = () => {
   };
 
   const logoutUser = async () => {
-    console.log("logout user");
+   console.log("yes I will be working shortly") 
   };
 
   return (
@@ -36,7 +36,6 @@ const DashboardLayout = () => {
           <div>
             <Navbar />
             <div className="dashboard-page">
-              <Admin />
               <Outlet />
             </div>
           </div>
@@ -48,3 +47,16 @@ const DashboardLayout = () => {
 
 export const useDashboardContext = () => useContext(DashboardContext)
 export default DashboardLayout;
+
+// import { Outlet } from "react-router-dom";
+// import Wrapper from "../assets/wrappers/Dashboard";
+
+// const DashboardLayout = () => {
+//   return (
+//     <div>
+//       <Outlet />
+//     </div>
+//   );
+// };
+
+// export default DashboardLayout;

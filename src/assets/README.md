@@ -842,7 +842,10 @@ App.jsx
             index: true,
             element: <AddJob />,
           },
-          { path: 'stats', element: <Stats /> },
+          { 
+            path: 'stats',
+            element: <Stats />
+          },
           {
             path: 'all-jobs',
             element: <AllJobs />,
@@ -884,6 +887,7 @@ export default DashboardLayout;
 
 DashboardLayout.jsx
 
+App
 ```jsx
 import { Outlet } from 'react-router-dom';
 
